@@ -11,4 +11,29 @@
 //BONUS 2:
 //Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 //Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
-//Buon lavoro e buon divertimento! : slightly_smiling_face:
+//Buon lavoro e buon divertimento!
+
+//el in html
+const my_element = document.getElementById("my_list");
+
+for (let i = 0; i < 100; i++) {
+
+    const my_item = document.createElement("li");
+    console.log(my_item);
+    //progressione di base 
+    my_item.innerHTML = i + 1;
+    my_item.classList.add("box");
+
+    if (i % 3 == 2) {
+        my_item.classList.add("box-one");
+        my_item.innerHTML = "fizz";
+    }
+
+
+    my_element.append(my_item)
+
+
+
+
+
+}

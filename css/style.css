@@ -1,0 +1,32 @@
+#my_list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    list-style: none;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    background-color: blueviolet;
+    margin: 10px;
+
+
+}
+
+.box-one {
+    background-color: black;
+    color: white;
+}
+
+.box-two {
+    background-color: yellow;
+}
+
+.box-three {
+    background-color: coral;
+}
