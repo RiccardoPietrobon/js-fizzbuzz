@@ -24,16 +24,26 @@ for (let i = 0; i < 100; i++) {
     my_item.innerHTML = i + 1;
     my_item.classList.add("box");
 
-    if (i % 3 == 2) {
+    //multipli di 3
+    if ((i + 1) % 3 == 0) {
         my_item.classList.add("box-one");
         my_item.innerHTML = "fizz";
     }
 
+    if ((i + 1) % 5 == 0) {
+        my_item.classList.add("box-two");
+        my_item.innerHTML = "Buzz";
+    }
 
+    if ((i + 1) % 15 == 0) {
+        my_item.classList.add("box-three");
+        my_item.innerHTML = "fizzBuzz";
+    }
     my_element.append(my_item)
-
-
-
-
-
 }
+
+
+
+
+
+
